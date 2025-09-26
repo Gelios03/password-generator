@@ -37,3 +37,8 @@ if include_ambiguous.lower() == 'да':
 if not chars:
     print('Ошибка: требуется выбрать как минимум один тип символов!')
     exit()
+
+print('\nСгенерированные пароли:')
+for i in range(num_passwords):
+    password = generate_password(length_password, chars)
+    print(f'{i + 1}. {password}')
