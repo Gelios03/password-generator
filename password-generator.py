@@ -1,5 +1,11 @@
 import random
 
+def generate_password(length_password, chars):
+    password = ''
+    for _ in range(length_password):
+        password += random.choice(chars)
+    return password
+
 DIGITS = '0123456789'
 UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 LOWERCASE = 'abcdefghijklmnopqrstuvwxyz'
